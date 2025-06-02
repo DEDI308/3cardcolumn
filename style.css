@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,700&family=Lexend+Deca&display=swap');
@@ -16,7 +15,6 @@
 }
 
 body {
-    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,8 +27,14 @@ body {
 .container {
     display: flex;
     max-width: 800px;
-    height: 27rem;
     border-radius: 0.5rem;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 25px;
 }
 
 .sedan {
@@ -54,10 +58,6 @@ body {
 
 .suv {
     background-color: var(--cyan);
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
-    gap: 25px;
 }
 
 .suv .btn {
@@ -72,11 +72,6 @@ body {
 
 .luxury {
     background-color: var(--darkcyan);
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
-    gap: 25px;
-    
 }
 
 .luxury .btn {
